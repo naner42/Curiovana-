@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Curiovana</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="App">
+    <header class="App-header">
+      <div class="logo">
+        <span role="img" aria-label="lightbulb" class="lightbulb">💡</span>
+        <h1 class="curiovana-text">
+          <span style="color:#FF6F61">C</span><span style="color:#6B5B95">u</span><span style="color:#88B04B">r</span>
+          <span style="color:#F7CAC9">i</span><span style="color:#92A8D1">o</span><span style="color:#955251">v</span>
+          <span style="color:#B565A7">a</span><span style="color:#009B77">n</span><span style="color:#DD4124">a</span>
+        </h1>
+      </div>
+
+      <div id="auth-section" class="auth-container">
+        <button id="googleSignInBtn">Sign in with Google</button>
+        <button id="signOutBtn" style="display:none">Sign out</button>
+        <div id="userInfo" style="margin-top:8px"></div>
+      </div>
+
+      <div id="upload-area" class="upload-section" style="display:none">
+        <h3>Upload Photo / Video</h3>
+        <input id="fileInput" type="file" accept="image/*,video/*" />
+        <button id="uploadBtn">Upload</button>
+        <div id="uploadStatus"></div>
+      </div>
+
+      <div id="posts" class="posts-list"></div>
+    </header>
+  </div>
+
+  <!-- Firebase (compat) SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
